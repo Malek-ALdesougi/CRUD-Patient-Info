@@ -21,9 +21,6 @@ while ($data = $result->fetch()) :
     // echo $data['firstName'];
     // echo $data['Age'];
     // echo $data['homeLocation'];
-
-
-
 ?>
 
     <!DOCTYPE html>
@@ -35,7 +32,6 @@ while ($data = $result->fetch()) :
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Patient Details</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
         <style>
             body {
                 background-color: gray;
@@ -48,13 +44,14 @@ while ($data = $result->fetch()) :
 
     <body>
 
-        <div class="card col-md-3">
+        <div class="card border-warning col-md-3">
             <img src="https://as2.ftcdn.net/v2/jpg/03/49/49/79/1000_F_349497933_Ly4im8BDmHLaLzgyKg2f2yZOvJjBtlw5.jpg" class="card-img-top" alt="...">
             <div class="card-body bg-warning">
                 <h5 class="card-title"> Patient Name: <?php echo $data['firstName'] ?></h5>
                 <h5 class="card-title"> Patient Age: <?php echo $data['Age'] ?></h5>
                 <h5 class="card-title"> Patient Address: <?php echo $data['homeLocation'] ?></h5>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit assumenda facere quaerat eligendi nam facilis, doloribus alias eum fugiat dolore expedita</p>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit assumenda facere quaerat eligendi nam facilis, doloribus </p>
+                <form action="http://localhost/CRUD-Patient-Info/index.php" method="POST"> <input style="border-radius: 5px;" type="submit" name="backk" value="Back To Dashboard"></form>
             </div>
             <div class="card-footer">
                 <small class="text-muted">Estimated recovery time : 14 days</small>

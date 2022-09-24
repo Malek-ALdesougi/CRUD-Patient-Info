@@ -66,7 +66,7 @@ try {
     <div style="width: 70%; margin-top:7vh;" id="container">
         <h1>وَإِذَا مَرِضۡتُ فَهُوَ يَشۡفِينِ (80)</h1><br>
         <h3>Patients Dashboard</h3>
-        <table class="table table-bordered table-condensed">
+        <table class="table table-bordered border-warning table-condensed">
             <form name="createPatient" action="http://localhost/cruD-Patient-Info/create.php/">
                 <input type="submit" value="Add New Patient" class=" button submit btn btn-warning">
             </form>
