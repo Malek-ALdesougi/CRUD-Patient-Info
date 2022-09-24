@@ -1,0 +1,29 @@
+.anchor{
+    text-decoration: none;
+    color:darkred;
+}
+
+.anchor:hover{
+    color: red;
+}
+
+.td{
+    text-align: center;
+}
+
+th{
+    text-align: center;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.button {
+    position: relative;
+    right: 418px;
+
+}
