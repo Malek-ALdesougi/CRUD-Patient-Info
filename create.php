@@ -9,16 +9,16 @@ if (isset($_POST['submit'])) {
     $age = $_POST['age'];
     $location = $_POST['location'];
 
-    // try {
-    //     $sql = "INSERT INTO  Patients (firstName, Age, homeLocation) VALUES ( '$name', '$age', '$location' )";
-    //     $connect->exec($sql);
-    //     echo "data inserted to the database successfully";
-    // } catch (PDOException $error) {
-    //     echo " faild insertion to the database" . $error->getMessage();
-    // }
+    try {
+        $sql = "INSERT INTO  Patients (firstName, Age, homeLocation) VALUES ( '$name', '$age', '$location' )";
+        $connect->exec($sql);
+        echo "data inserted to the database successfully";
+    } catch (PDOException $error) {
+        echo " faild insertion to the database" . $error->getMessage();
+    }
 
-    // header('Location: http://localhost/CRUD-Patient-Info/index.php/');
-    // exit();
+    header('Location: http://localhost/CRUD-Patient-Info/index.php/');
+    exit();
 }
 
 //back to dashboard button 
